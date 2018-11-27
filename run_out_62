@@ -1,0 +1,30 @@
+#/bin/csh
+set tf0 = 'tmp'
+set tf1 = 'tmp2'
+set tf2 = ` whoami ` 
+if ( -e $tf0 ) rm $tf0
+if ( -e $tf1 ) rm $tf1
+if ( -e $tf2 ) rm $tf2
+if ( -e tmp1 ) rm tmp1
+if( -e out_62.m) then
+	#/opt/bin/matlab < out_62.m 
+	/usr/local/bin/matlab < out_62.m 
+else
+	echo "Can not find your matalb file: out_62.m"
+endif
+	ps -ef | grep $tf2 > ${tf0}
+	grep "MATLAB" $tf0 > ${tf1}
+
+	if ( -z ${tf1} ) then
+		echo Not matlab problem
+	else
+		set tmp1 = `awk '{ print  $2 }' ${tf1} ` 
+		foreach process ( $tmp1) 
+			kill -9 ${process}
+		end
+	endif
+
+	if ( -e $tf0 ) rm $tf0
+	if ( -e $tf1 ) rm $tf1
+	if ( -e tmp1 ) rm tmp1
+
