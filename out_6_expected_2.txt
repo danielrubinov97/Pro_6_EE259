@@ -1,0 +1,9 @@
+********** P6 BEGIN *************
+*** OUTPUT FROM P6_LINEAR_SOLVER: 
+*** INSTANTIATED AN OBJECT WITH 2 EQUATIONS
+*********** P6 END **************
+********** P6 BEGIN *************
+*** RESULT FROM MATLAB (UNSORTED):
+X[0]= 1.00
+X[1]= 2.00
+*********** P6 END **************

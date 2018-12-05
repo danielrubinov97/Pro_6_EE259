@@ -1,0 +1,9 @@
+********** P6 BEGIN *************
+*** OUTPUT FROM P6_LINEAR_SOLVER: 
+*** INSTANTIATED AN OBJECT WITH 2 EQUATIONS
+*********** P6 END **************
+********** P6 BEGIN *************
+*** MY GAUSSIAN ELIMINATION SOLUTION (SORTED IN DESCENDING ORDER):
+X[1]= 2.00
+X[0]= 1.00
+*********** P6 END **************

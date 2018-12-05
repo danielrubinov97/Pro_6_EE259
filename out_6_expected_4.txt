@@ -1,0 +1,9 @@
+********** P6 BEGIN *************
+*** OUTPUT FROM P6_LINEAR_SOLVER: 
+*** INSTANTIATED AN OBJECT WITH 2 EQUATIONS
+*********** P6 END **************
+********** P6 BEGIN *************	
+*** INVERSION RESULT FROM MATLAB:
+X[0][0]= 0.33 X[0][1]= 0.33 
+X[1][0]= 0.33 X[1][1]= -0.67 
+*********** P6 END **************
